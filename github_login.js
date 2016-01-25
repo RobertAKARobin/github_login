@@ -4,7 +4,7 @@ var app = express();
 var request = require("request");
 var env = require("./env.json");
 
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 3002);
 
 app.get("/", function(req, res){
   var url = "https://github.com/login/oauth/authorize?" + [
